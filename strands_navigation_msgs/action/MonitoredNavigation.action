@@ -1,0 +1,4 @@
+string action_server
+geometry_msgs/PoseStamped target_pose
+---
+---
