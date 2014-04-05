@@ -23,6 +23,7 @@ find_package(catkin REQUIRED COMPONENTS message_generation std_msgs geometry_msg
 add_message_files(
   FILES
   NavStatus.msg
+  NavStatistics.msg
 )
 
 # Generate services in the 'srv' folder
