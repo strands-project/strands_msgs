@@ -4,7 +4,7 @@ project(strands_navigation_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS message_generation std_msgs geometry_msgs actionlib)
+find_package(catkin REQUIRED COMPONENTS message_generation std_msgs geometry_msgs actionlib topological_utils)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -24,6 +24,7 @@ add_message_files(
   FILES
   NavStatus.msg
   NavStatistics.msg
+  TopologicalNode.msg
 )
 
 # Generate services in the 'srv' folder
@@ -45,6 +46,7 @@ generate_messages(
   std_msgs
   geometry_msgs
   actionlib_msgs
+  topological_utils
 )
 
 ###################################
