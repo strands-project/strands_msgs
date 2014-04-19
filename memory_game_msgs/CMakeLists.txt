@@ -11,6 +11,7 @@ add_message_files(
   FILES
   MemoryCard.msg
   MemoryCardArray.msg
+  MemoryHeadControl.msg
 )
 
 # add_service_files(
