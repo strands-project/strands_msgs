@@ -37,7 +37,12 @@ add_service_files(
 
 
 find_package(catkin REQUIRED genmsg actionlib_msgs)
-add_action_files(DIRECTORY action FILES MonitoredNavigation.action)
+add_action_files(
+	DIRECTORY action 
+	FILES 
+	MonitoredNavigation.action
+	DoorCheck.action
+)
 
 
 ## Generate added messages and services with any dependencies listed here
