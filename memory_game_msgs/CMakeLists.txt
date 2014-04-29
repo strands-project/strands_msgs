@@ -1,10 +1,15 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(memory_game_msgs)
 
+
 find_package(catkin REQUIRED COMPONENTS 
     message_generation 
     std_msgs 
     geometry_msgs
+    actionlib
+    genmsg
+    actionlib_msgs
+    topological_utils
 )
 
 add_message_files(
@@ -13,6 +18,13 @@ add_message_files(
   MemoryCardArray.msg
   MemoryHeadControl.msg
 )
+
+add_action_files(
+  DIRECTORY action 
+  FILES
+  BoardApproach.action
+)
+
 
 # add_service_files(
 #   FILES
@@ -24,6 +36,8 @@ generate_messages(
   DEPENDENCIES
   std_msgs
   geometry_msgs
+  actionlib_msgs
+  topological_utils
 )
 
 catkin_package(
