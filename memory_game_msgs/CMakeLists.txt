@@ -9,7 +9,6 @@ find_package(catkin REQUIRED COMPONENTS
     actionlib
     genmsg
     actionlib_msgs
-    topological_utils
 )
 
 add_message_files(
@@ -37,7 +36,6 @@ generate_messages(
   std_msgs
   geometry_msgs
   actionlib_msgs
-  topological_utils
 )
 
 catkin_package(
