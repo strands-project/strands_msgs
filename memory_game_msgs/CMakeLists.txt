@@ -22,6 +22,7 @@ add_action_files(
   DIRECTORY action 
   FILES
   BoardApproach.action
+  PlayMemoryGame.action
 )
 
 
