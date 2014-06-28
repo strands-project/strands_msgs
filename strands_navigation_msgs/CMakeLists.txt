@@ -26,6 +26,7 @@ add_message_files(
   NavStatistics.msg
   TopologicalNode.msg
   MonitoredNavEvent.msg
+  NavRoute.msg
 )
 
 # Generate services in the 'srv' folder
