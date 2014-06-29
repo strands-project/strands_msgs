@@ -1,3 +1,3 @@
-string[] Source
-string[] Target
-float64[] Prob
+string[] source
+string[] target
+float64[] prob
